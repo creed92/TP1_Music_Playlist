@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:scaleType="fitXY"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="293dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:text="Sort List by"
+        android:textSize="30dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/MusicList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/MusicTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Music Title"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.839"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/looporand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Loop"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.992"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/Image"
+        android:layout_width="79dp"
+        android:layout_height="82dp"
+        android:background="@drawable/cirleshape"
+        android:clipToOutline="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.898" />
+
+
+    <ListView
+        android:id="@+id/MusicList"
+        android:layout_width="414dp"
+        android:layout_height="484dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.386" />
+
+    <Button
+        android:id="@+id/Play"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+
+        android:background="@drawable/play"
+        android:text="Play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.894" />
+
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+
+
+        android:background="@drawable/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Play"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.894" />
+
+    <Button
+        android:id="@+id/Random"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/altoir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Next"
+        app:layout_constraintVertical_bias="0.515" />
+
+    <Button
+        android:id="@+id/loop"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bcl"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Prec"
+        app:layout_constraintVertical_bias="0.515" />
+
+    <Button
+        android:id="@+id/Prec"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+
+
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Play"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.894" />
+
+    <Button
+        android:id="@+id/sortbytitle"
+        android:layout_width="73dp"
+        android:layout_height="41dp"
+        android:gravity="center"
+        android:text="title"
+        android:textSize="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <Button
+        android:id="@+id/sortbyduration"
+        android:layout_width="77dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="80dp"
+        android:gravity="center"
+        android:text="duration"
+        android:textSize="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sortbytitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <Button
+        android:id="@+id/sortbyartist"
+        android:layout_width="77dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="80dp"
+        android:gravity="center"
+        android:text="artist"
+        android:textSize="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sortbytitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.082" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
